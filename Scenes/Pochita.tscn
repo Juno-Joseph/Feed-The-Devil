@@ -1,0 +1,84 @@
+[gd_scene load_steps=13 format=3 uid="uid://b73j1n7xno5g3"]
+
+[ext_resource type="Texture2D" uid="uid://csjmpla6ui0pf" path="res://Assets/Pochita Idle.png" id="1_iu1pi"]
+[ext_resource type="Script" path="res://Scripts/Pochita.gd" id="1_kjq4e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rra1k"]
+atlas = ExtResource("1_iu1pi")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lmveo"]
+atlas = ExtResource("1_iu1pi")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hukac"]
+atlas = ExtResource("1_iu1pi")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_apj4b"]
+atlas = ExtResource("1_iu1pi")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hfhpa"]
+atlas = ExtResource("1_iu1pi")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sbwif"]
+atlas = ExtResource("1_iu1pi")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_puw47"]
+atlas = ExtResource("1_iu1pi")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ocec3"]
+atlas = ExtResource("1_iu1pi")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kunyj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rra1k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lmveo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hukac")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_apj4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hfhpa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sbwif")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_puw47")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ocec3")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 13.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t8rb0"]
+size = Vector2(11.1, 8.5)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(5, 5)
+script = ExtResource("1_kjq4e")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_kunyj")
+animation = &"Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6.4, 1.4)
+shape = SubResource("RectangleShape2D_t8rb0")

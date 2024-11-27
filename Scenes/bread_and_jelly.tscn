@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv1e0yn6fvlpb"]
+
+[ext_resource type="Shader" path="res://Shaders/bread_and_jelly.gdshader" id="1_1s254"]
+[ext_resource type="Texture2D" uid="uid://dxu54hv8c7tgn" path="res://Assets/Pochita Moiving BG.png" id="1_s55i5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_76b1t"]
+shader = ExtResource("1_1s254")
+shader_parameter/xspeed = 0.2
+shader_parameter/yspeed = -0.3
+
+[node name="Bread And Jelly" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Pattern" type="TextureRect" parent="."]
+texture_filter = 1
+texture_repeat = 2
+material = SubResource("ShaderMaterial_76b1t")
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 768.0
+texture = ExtResource("1_s55i5")
