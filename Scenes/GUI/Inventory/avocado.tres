@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="FoodData" load_steps=3 format=3 uid="uid://dcasdv2w22t62"]
+
+[ext_resource type="Texture2D" uid="uid://cat55fdtda2cy" path="res://Assets/Pochita Apple.png" id="1_sp7se"]
+[ext_resource type="Script" path="res://Scripts/GUI/food_data.gd" id="2_kcty7"]
+
+[resource]
+script = ExtResource("2_kcty7")
+type = 0
+food_name = "Apple"
+food_points = 3
+description = "This is a shiny red apple. Healthy food is new for pochita! This is sweet and Juicy."
+food_texture = ExtResource("1_sp7se")

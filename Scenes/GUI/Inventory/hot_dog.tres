@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="FoodData" load_steps=3 format=3 uid="uid://deolh11l8wfe2"]
+
+[ext_resource type="Texture2D" uid="uid://bjhxd1xehre5n" path="res://Assets/Pochita Bread and Jelly.png" id="1_f3qbi"]
+[ext_resource type="Script" path="res://Scripts/GUI/food_data.gd" id="2_f57bm"]
+
+[resource]
+script = ExtResource("2_f57bm")
+type = 0
+food_name = "Bread And Jelly"
+food_points = 4
+description = "This is the pinnacle of everything Denji and Pochita dreamed of eating while surviving in the slums. Each time he eats this he is greatful for this wonderful treat"
+food_texture = ExtResource("1_f3qbi")

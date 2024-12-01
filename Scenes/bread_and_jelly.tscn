@@ -24,3 +24,4 @@ layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 768.0
 texture = ExtResource("1_s55i5")
+stretch_mode = 1
