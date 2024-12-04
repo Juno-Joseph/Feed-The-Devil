@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://ddvwesunff15r"]
+[gd_scene load_steps=7 format=3 uid="uid://ddvwesunff15r"]
 
 [ext_resource type="PackedScene" uid="uid://b73j1n7xno5g3" path="res://Scenes/Pochita.tscn" id="1_7qs5v"]
 [ext_resource type="Texture2D" uid="uid://dvu0flx71vuva" path="res://Assets/Pochita BG.png" id="2_k0l71"]
-[ext_resource type="PackedScene" uid="uid://dv1e0yn6fvlpb" path="res://Scenes/bread_and_jelly.tscn" id="3_1nvds"]
+[ext_resource type="PackedScene" uid="uid://dv1e0yn6fvlpb" path="res://Scenes/bread_and_jelly_bg.tscn" id="3_1nvds"]
+[ext_resource type="PackedScene" uid="uid://cosu8mdlqxvrg" path="res://Scenes/apple.tscn" id="4_xwlcc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l11t0"]
 texture = ExtResource("2_k0l71")
@@ -76,7 +77,7 @@ sources/0 = SubResource("TileSetAtlasSource_l11t0")
 
 [node name="Game" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_7qs5v")]
+[node name="Pochita" parent="." instance=ExtResource("1_7qs5v")]
 z_index = 1
 position = Vector2(553, 349)
 
@@ -89,3 +90,8 @@ layer_0/tile_data = PackedInt32Array(0, 524288, 8, 65536, 524288, 9, 131072, 524
 
 [node name="Bread And Jelly" parent="." instance=ExtResource("3_1nvds")]
 visible = false
+
+[node name="Apple" parent="." instance=ExtResource("4_xwlcc")]
+z_index = 3
+position = Vector2(255, 295)
+scale = Vector2(0.5, 0.5)
