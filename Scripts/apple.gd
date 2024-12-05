@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var pochita_mouth: CollisionShape2D = $CollisionShape2D
+
 var ready_to_eat = false
 var selected = false
 
@@ -16,5 +18,5 @@ func _input(event):
 		if event.button_index == MOUSE_BUTTON_LEFT and not event.pressed:
 			selected = false
 
-func _ready():
-	if 
+func _on_body_entered(body):
+	print("You ate an apple")
