@@ -10,4 +10,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
+	#if global.is_dragging:
+	#	visible = true
+	#else:
+	#	visible = false
 	pass
