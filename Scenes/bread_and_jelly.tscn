@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cr03xm4qbe4kd"]
+
+[ext_resource type="Script" path="res://Scripts/bread_and_jelly.gd" id="1_273vg"]
+[ext_resource type="Texture2D" uid="uid://bjhxd1xehre5n" path="res://Assets/Pochita Bread and Jelly.png" id="1_y0gcl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lifa0"]
+radius = 57.0088
+
+[node name="bread_and_jelly" type="CharacterBody2D"]
+position = Vector2(507, 268)
+script = ExtResource("1_273vg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_y0gcl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 11)
+shape = SubResource("CircleShape2D_lifa0")

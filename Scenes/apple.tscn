@@ -6,16 +6,12 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_mrhr0"]
 radius = 57.0088
 
-[node name="Apple" type="Node2D"]
+[node name="Apple" type="CharacterBody2D"]
 script = ExtResource("1_mgw4j")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_dqkqn")
 
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2, 6)
 shape = SubResource("CircleShape2D_mrhr0")
-
-[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
