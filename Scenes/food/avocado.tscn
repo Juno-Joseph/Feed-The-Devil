@@ -19,3 +19,13 @@ position = Vector2(1, -10)
 rotation = 0.785398
 scale = Vector2(4.34274, 1.86851)
 shape = SubResource("CapsuleShape2D_eswy1")
+
+[node name="Area2D" type="Area2D" parent="." groups=["food"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, -10)
+rotation = 0.785398
+scale = Vector2(4.34274, 1.86851)
+shape = SubResource("CapsuleShape2D_eswy1")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

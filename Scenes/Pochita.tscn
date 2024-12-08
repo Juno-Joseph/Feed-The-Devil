@@ -82,3 +82,9 @@ animation = &"Idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(6.4, 1.4)
 shape = SubResource("RectangleShape2D_t8rb0")
+
+[node name="Area2D" type="Area2D" parent="." groups=["Pochita"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(6.4, 1.4)
+shape = SubResource("RectangleShape2D_t8rb0")

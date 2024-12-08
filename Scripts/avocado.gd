@@ -25,3 +25,7 @@ func _physics_process(delta):
 	
 
 	move_and_slide()
+
+
+func _on_area_2d_area_entered(area):
+	print("collision")
