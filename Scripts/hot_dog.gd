@@ -25,3 +25,9 @@ func _physics_process(delta):
 	
 
 	move_and_slide()
+
+
+func _on_area_2d_area_entered(area):
+	global.points = global.points + 1
+	print(global.points)
+	print("collision")
