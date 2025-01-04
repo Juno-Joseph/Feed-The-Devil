@@ -5,8 +5,8 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_76b1t"]
 shader = ExtResource("1_1s254")
-shader_parameter/xspeed = 0.2
-shader_parameter/yspeed = -0.3
+shader_parameter/xspeed = 0.1
+shader_parameter/yspeed = -0.03
 
 [node name="Bread And Jelly" type="Control"]
 layout_mode = 3

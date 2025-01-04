@@ -10,17 +10,17 @@ size = Vector2(101.394, 95.9139)
 position = Vector2(507, 268)
 script = ExtResource("1_273vg")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_y0gcl")
+[node name="Area2D" type="Area2D" parent="." groups=["food"]]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(1, 11)
 rotation = 0.785398
 shape = SubResource("RectangleShape2D_185j1")
 
-[node name="Area2D" type="Area2D" parent="." groups=["food"]]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_y0gcl")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 11)
 rotation = 0.785398
 shape = SubResource("RectangleShape2D_185j1")
