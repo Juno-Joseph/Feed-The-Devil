@@ -29,6 +29,6 @@ func _physics_process(delta):
 
 func _on_area_2d_area_entered(area):
 	if area.is_in_group("Pochita"):
-		global.points = global.points + 2
+		global.points = global.points + 4
 		print(global.points)
 		print("collision")

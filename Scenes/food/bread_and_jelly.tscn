@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cr03xm4qbe4kd"]
 
-[ext_resource type="Script" path="res://Scripts/bread_and_jelly.gd" id="1_273vg"]
-[ext_resource type="Texture2D" uid="uid://bjhxd1xehre5n" path="res://Assets/Pochita Bread and Jelly.png" id="1_y0gcl"]
+[ext_resource type="Script" path="res://Scripts/food/bread_and_jelly.gd" id="1_273vg"]
+[ext_resource type="Texture2D" uid="uid://bjhxd1xehre5n" path="res://Assets/food/Pochita Bread and Jelly.png" id="1_y0gcl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_185j1"]
 size = Vector2(101.394, 95.9139)

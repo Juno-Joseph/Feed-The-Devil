@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b6uo2ya3oy1o6"]
 
-[ext_resource type="Texture2D" uid="uid://dblifuoqlftpe" path="res://Assets/Pochita HotDog.png" id="1_5xw3t"]
-[ext_resource type="Script" path="res://Scripts/hot_dog.gd" id="1_rbfsd"]
+[ext_resource type="Texture2D" uid="uid://dblifuoqlftpe" path="res://Assets/food/Pochita HotDog.png" id="1_5xw3t"]
+[ext_resource type="Script" path="res://Scripts/food/hot_dog.gd" id="1_rbfsd"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nxs3v"]
 radius = 2.48959

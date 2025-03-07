@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd2crtk1tshwr"
-path="res://.godot/imported/Pochita Potato.png-4f4331e6b5bc9e4287b0ae95c877df25.ctex"
+uid="uid://bjhxd1xehre5n"
+path="res://.godot/imported/Pochita Bread and Jelly.png-af6113a3c864128b5ae1f5fe2010bb9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pochita Potato.png"
-dest_files=["res://.godot/imported/Pochita Potato.png-4f4331e6b5bc9e4287b0ae95c877df25.ctex"]
+source_file="res://Assets/food/Pochita Bread and Jelly.png"
+dest_files=["res://.godot/imported/Pochita Bread and Jelly.png-af6113a3c864128b5ae1f5fe2010bb9b.ctex"]
 
 [params]
 

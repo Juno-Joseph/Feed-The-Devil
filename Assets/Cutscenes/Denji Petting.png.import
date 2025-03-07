@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjhxd1xehre5n"
-path="res://.godot/imported/Pochita Bread and Jelly.png-a27f0c9744040b43bc16a278c2a22a58.ctex"
+uid="uid://bxm7m5jki5iuc"
+path="res://.godot/imported/Denji Petting.png-2aacea17f2a4870a0e36ec59b3ce0d70.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pochita Bread and Jelly.png"
-dest_files=["res://.godot/imported/Pochita Bread and Jelly.png-a27f0c9744040b43bc16a278c2a22a58.ctex"]
+source_file="res://Assets/Cutscenes/Denji Petting.png"
+dest_files=["res://.godot/imported/Denji Petting.png-2aacea17f2a4870a0e36ec59b3ce0d70.ctex"]
 
 [params]
 

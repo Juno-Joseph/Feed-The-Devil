@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d07ybqgsnhb0r"
-path="res://.godot/imported/Pochita Avocado.png-4e3e7f40fede1775ef54c7f225229a65.ctex"
+uid="uid://dblifuoqlftpe"
+path="res://.godot/imported/Pochita HotDog.png-1e9636bfc81d463eef165dda851cfee5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pochita Avocado.png"
-dest_files=["res://.godot/imported/Pochita Avocado.png-4e3e7f40fede1775ef54c7f225229a65.ctex"]
+source_file="res://Assets/food/Pochita HotDog.png"
+dest_files=["res://.godot/imported/Pochita HotDog.png-1e9636bfc81d463eef165dda851cfee5.ctex"]
 
 [params]
 

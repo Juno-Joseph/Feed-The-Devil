@@ -1,0 +1,123 @@
+[gd_scene load_steps=17 format=3 uid="uid://b2xmvn2eibw64"]
+
+[ext_resource type="Texture2D" uid="uid://bxm7m5jki5iuc" path="res://Assets/Cutscenes/Denji Petting.png" id="1_nyq0a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_igmj3"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mq1c3"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lif0c"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wuq1f"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2cie7"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtl0h"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kg74v"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2tisq"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6rrki"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dncwp"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(1152, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_isohd"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(1280, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0ixl"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(1408, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3f30w"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(1536, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hscjg"]
+atlas = ExtResource("1_nyq0a")
+region = Rect2(1664, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4kbsn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_igmj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mq1c3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lif0c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wuq1f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2cie7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtl0h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kg74v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2tisq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6rrki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dncwp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_isohd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0ixl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3f30w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hscjg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="pets" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(584, 328)
+scale = Vector2(5.115, 5.115)
+sprite_frames = SubResource("SpriteFrames_4kbsn")
+frame_progress = 0.449596
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
+offset_right = 1151.0
+offset_bottom = 649.0
+color = Color(0.322967, 0.453332, 0.267724, 1)

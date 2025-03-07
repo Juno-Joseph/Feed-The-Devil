@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b5gn8g6nf1nwn"]
 
-[ext_resource type="Texture2D" uid="uid://d07ybqgsnhb0r" path="res://Assets/Pochita Avocado.png" id="1_jay52"]
-[ext_resource type="Script" path="res://Scripts/avocado.gd" id="2_oandv"]
+[ext_resource type="Texture2D" uid="uid://d07ybqgsnhb0r" path="res://Assets/food/Pochita Avocado.png" id="1_jay52"]
+[ext_resource type="Script" path="res://Scripts/food/avocado.gd" id="2_oandv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eswy1"]
 radius = 8.95538
