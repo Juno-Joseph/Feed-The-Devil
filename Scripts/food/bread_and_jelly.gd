@@ -1,7 +1,10 @@
 extends CharacterBody2D
 
+var pets = preload("res://Scenes/Cut Scenes/pets.tscn")
+@onready var transition = $"../Transition"
 
-const SPEED = 300.0
+
+var SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -29,6 +32,11 @@ func _physics_process(delta):
 
 func _on_area_2d_area_entered(area):
 	if area.is_in_group("Pochita"):
-		global.points = global.points + 4
+		global.points += 4
 		print(global.points)
 		print("collision")
+		transition.play("light_fade_out")
+		SPEED = 0
+
+func _on_transition_animation_finished(anim_name):
+	get_tree().change_scene_to_packed(pets)
