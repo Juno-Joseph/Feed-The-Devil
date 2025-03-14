@@ -1,7 +1,10 @@
 extends CharacterBody2D
 
+var csm = preload("res://Scenes/Cut Scenes/csm.tscn")
+@onready var transition = $"../Transition"
 
-const SPEED = 300.0
+var glizzy_pts = -5
+var SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -29,6 +32,9 @@ func _physics_process(delta):
 
 func _on_area_2d_area_entered(area):
 	if area.is_in_group("Pochita"):
-		global.points = global.points + 1
+		global.points += glizzy_pts
 		print(global.points)
 		print("collision")
+		transition.play("dark_fade_out")
+		SPEED = 0
+

@@ -1,7 +1,10 @@
 extends CharacterBody2D
 
+var death = preload("res://Scenes/Cut Scenes/death.tscn")
+@onready var transition = $"../Transition"
 
-const SPEED = 300.0
+var avo_pts = -5
+var SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -29,7 +32,15 @@ func _physics_process(delta):
 
 func _on_area_2d_area_entered(area):
 	if area.is_in_group("Pochita"):
-		global.points = global.points - 5
+		global.points += avo_pts
 		print(global.points)
 		print("collision")
-		
+		transition.play("dark_fade_out")
+		SPEED = 0
+
+
+func _on_transition_animation_finished(anim_name):
+	if global.points == avo_pts:
+		get_tree().change_scene_to_packed(death)
+	else:
+		pass

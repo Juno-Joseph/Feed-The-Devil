@@ -127,13 +127,13 @@ offset_left = 413.0
 offset_top = 313.0
 offset_right = 634.0
 offset_bottom = 336.0
-text = "CSM ANIMATION GOES HERE"
+text = "NEWTON ANIMATION GOES HERE"
 
 [node name="ColorRect" type="ColorRect" parent="."]
 z_index = -1
 offset_right = 1151.0
 offset_bottom = 649.0
-color = Color(0.322967, 0.453332, 0.267724, 1)
+color = Color(0.79, 0.3871, 0.5214, 1)
 
 [node name="Transition" type="AnimationPlayer" parent="."]
 libraries = {
@@ -141,6 +141,7 @@ libraries = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="Transition"]
+visible = false
 z_index = 5
 anchors_preset = 15
 anchor_right = 1.0
