@@ -1,7 +1,7 @@
 [gd_scene load_steps=23 format=3 uid="uid://b2xmvn2eibw64"]
 
+[ext_resource type="Script" path="res://Scripts/Cut Scenes/pets.gd" id="1_cedd4"]
 [ext_resource type="Texture2D" uid="uid://bxm7m5jki5iuc" path="res://Assets/Cutscenes/Denji Petting.png" id="1_nyq0a"]
-[ext_resource type="Script" path="res://Scripts/pets.gd" id="1_ugv8i"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_igmj3"]
 atlas = ExtResource("1_nyq0a")
@@ -105,9 +105,63 @@ animations = [{
 "texture": SubResource("AtlasTexture_hscjg")
 }],
 "loop": true,
-"name": &"default",
+"name": &"pets",
 "speed": 10.0
 }]
+
+[sub_resource type="Animation" id="Animation_h23ly"]
+resource_name = "dark_fade_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/ColorRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_87neh"]
+resource_name = "dark_fade_out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Transition/ColorRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Transition/ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_lexsr"]
 resource_name = "light_fade_in"
@@ -163,60 +217,6 @@ tracks/1/keys = {
 "values": [true]
 }
 
-[sub_resource type="Animation" id="Animation_87neh"]
-resource_name = "dark_fade_out"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Transition/ColorRect:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(0, 0, 0, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Transition/ColorRect:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="Animation" id="Animation_h23ly"]
-resource_name = "dark_fade_in"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Transition/ColorRect:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Transition/ColorRect:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(1),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c4onh"]
 _data = {
 "dark_fade_in": SubResource("Animation_h23ly"),
@@ -226,13 +226,13 @@ _data = {
 }
 
 [node name="pets" type="Node2D"]
-script = ExtResource("1_ugv8i")
+script = ExtResource("1_cedd4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(584, 328)
 scale = Vector2(5.115, 5.115)
 sprite_frames = SubResource("SpriteFrames_4kbsn")
-frame_progress = 0.875469
+animation = &"pets"
 
 [node name="ColorRect" type="ColorRect" parent="."]
 z_index = -1
@@ -246,7 +246,6 @@ libraries = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="Transition"]
-self_modulate = Color(0, 0, 0, 1)
 z_index = 5
 anchors_preset = 15
 anchor_right = 1.0
