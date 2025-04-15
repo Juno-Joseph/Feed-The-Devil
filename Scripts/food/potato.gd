@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var memories = preload("res://Scenes/Cut Scenes/memories.tscn")
+@export var memories = preload("res://Scenes/Cut Scenes/memories.tscn")
 @onready var transition = $"../Transition"
 
 var potato_pts = 2
@@ -37,5 +37,10 @@ func _on_area_2d_area_entered(area):
 		print("collision")
 		transition.play("light_fade_out")
 		SPEED = 0
+		get_tree().change_scene_to_packed(memories)
 
-
+func _on_transition_animation_finished(anim_name):
+	if global.points == potato_pts:
+		pass
+	else:
+		pass

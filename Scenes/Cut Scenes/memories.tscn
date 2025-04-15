@@ -142,6 +142,7 @@ libraries = {
 
 [node name="ColorRect" type="ColorRect" parent="Transition"]
 visible = false
+self_modulate = Color(0, 0, 0, 1)
 z_index = 5
 anchors_preset = 15
 anchor_right = 1.0

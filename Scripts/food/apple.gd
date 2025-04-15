@@ -38,7 +38,6 @@ func _on_area_2d_area_entered(area):
 		transition.play("light_fade_out")
 		SPEED = 0
 
-
 func _on_transition_animation_finished(anim_name):
 	if global.points == apple_pts:
 		get_tree().change_scene_to_packed(newton)

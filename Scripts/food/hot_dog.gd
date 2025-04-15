@@ -37,4 +37,11 @@ func _on_area_2d_area_entered(area):
 		print("collision")
 		transition.play("dark_fade_out")
 		SPEED = 0
+		get_tree().change_scene_to_packed(csm)
 
+
+func _on_transition_animation_finished(anim_name):
+	if global.points == glizzy_pts:
+		pass
+	else:
+		pass
