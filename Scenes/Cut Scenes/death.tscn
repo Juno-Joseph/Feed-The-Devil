@@ -1,6 +1,120 @@
-[gd_scene load_steps=7 format=3 uid="uid://b3hc0wk3mfliw"]
+[gd_scene load_steps=24 format=3 uid="uid://b3hc0wk3mfliw"]
 
 [ext_resource type="Script" path="res://Scripts/Cut Scenes/death.gd" id="1_kooli"]
+[ext_resource type="Texture2D" uid="uid://hom881lh7vey" path="res://Assets/Cutscenes/dead pochita.png" id="2_v5jsf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ao65s"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m6ybw"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yvjk2"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3pvcu"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8be6"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfa61"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ojix4"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0cogb"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5bq76"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_piy4f"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(1152, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4r48"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(1280, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uyoq0"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(1408, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n58eq"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(1536, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pdbhu"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(1664, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pq6bv"]
+atlas = ExtResource("2_v5jsf")
+region = Rect2(1792, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ac554"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ao65s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m6ybw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yvjk2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3pvcu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8be6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wfa61")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ojix4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cogb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5bq76")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_piy4f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s4r48")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uyoq0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n58eq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pdbhu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pq6bv")
+}],
+"loop": true,
+"name": &"death",
+"speed": 5.0
+}]
 
 [sub_resource type="Animation" id="Animation_h23ly"]
 resource_name = "dark_fade_in"
@@ -121,15 +235,14 @@ _data = {
 [node name="Death" type="Node2D"]
 script = ExtResource("1_kooli")
 
-[node name="Animatio Placer Holder" type="Label" parent="."]
-z_index = 1
-offset_left = 413.0
-offset_top = 313.0
-offset_right = 634.0
-offset_bottom = 336.0
-text = "DEATH ANIMATION GOES HERE"
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(564, 328)
+scale = Vector2(5.115, 5.115)
+sprite_frames = SubResource("SpriteFrames_ac554")
+animation = &"death"
 
 [node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
 offset_right = 1152.0
 offset_bottom = 646.0
 color = Color(0.35, 0.3192, 0.273, 1)
@@ -140,7 +253,6 @@ libraries = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="Transition"]
-visible = false
 self_modulate = Color(0, 0, 0, 1)
 z_index = 5
 anchors_preset = 15
