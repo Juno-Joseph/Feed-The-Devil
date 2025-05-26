@@ -1,6 +1,78 @@
-[gd_scene load_steps=7 format=3 uid="uid://bh3rueruaobp3"]
+[gd_scene load_steps=18 format=3 uid="uid://bh3rueruaobp3"]
 
 [ext_resource type="Script" path="res://Scripts/Cut Scenes/newton.gd" id="1_b3bx1"]
+[ext_resource type="Texture2D" uid="uid://fdewnvxmnfjv" path="res://Assets/Cutscenes/Pochita Newton.png" id="2_8x6hq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrfbr"]
+atlas = ExtResource("2_8x6hq")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7ch4"]
+atlas = ExtResource("2_8x6hq")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dwri2"]
+atlas = ExtResource("2_8x6hq")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trsnx"]
+atlas = ExtResource("2_8x6hq")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m063o"]
+atlas = ExtResource("2_8x6hq")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gplfm"]
+atlas = ExtResource("2_8x6hq")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1kgue"]
+atlas = ExtResource("2_8x6hq")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_46ic1"]
+atlas = ExtResource("2_8x6hq")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x03no"]
+atlas = ExtResource("2_8x6hq")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ommn"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_lrfbr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7ch4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dwri2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_trsnx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m063o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gplfm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1kgue")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_46ic1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x03no")
+}],
+"loop": false,
+"name": &"newton",
+"speed": 8.0
+}]
 
 [sub_resource type="Animation" id="Animation_h23ly"]
 resource_name = "dark_fade_in"
@@ -121,13 +193,13 @@ _data = {
 [node name="Newton" type="Node2D"]
 script = ExtResource("1_b3bx1")
 
-[node name="Animatio Placer Holder" type="Label" parent="."]
-z_index = 1
-offset_left = 413.0
-offset_top = 313.0
-offset_right = 634.0
-offset_bottom = 336.0
-text = "NEWTON ANIMATION GOES HERE"
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(564, 328)
+scale = Vector2(5.115, 5.115)
+sprite_frames = SubResource("SpriteFrames_7ommn")
+animation = &"newton"
+frame = 8
+frame_progress = 1.0
 
 [node name="ColorRect" type="ColorRect" parent="."]
 z_index = -1
@@ -142,6 +214,7 @@ libraries = {
 
 [node name="ColorRect" type="ColorRect" parent="Transition"]
 visible = false
+self_modulate = Color(0, 0, 0, 1)
 z_index = 5
 anchors_preset = 15
 anchor_right = 1.0
