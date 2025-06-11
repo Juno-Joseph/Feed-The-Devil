@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dv1e0yn6fvlpb"]
 
-[ext_resource type="Shader" path="res://Shaders/bread_and_jelly.gdshader" id="1_1s254"]
+[ext_resource type="Shader" uid="uid://cxlt74cyfp53p" path="res://Shaders/bread_and_jelly.gdshader" id="1_1s254"]
 [ext_resource type="Texture2D" uid="uid://dxu54hv8c7tgn" path="res://Assets/Pochita Moiving BG.png" id="1_s55i5"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_76b1t"]
