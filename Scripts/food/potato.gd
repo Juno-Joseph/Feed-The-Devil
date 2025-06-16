@@ -41,6 +41,6 @@ func _on_area_2d_area_entered(area):
 
 func _on_transition_animation_finished(anim_name):
 	if global.points == potato_pts:
-		pass
+		get_tree().change_scene_to_packed(memories)
 	else:
 		pass

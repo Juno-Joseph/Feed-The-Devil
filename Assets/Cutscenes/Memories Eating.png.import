@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cko3copxff74e"
-path="res://.godot/imported/Memories Alley.png-28496e109aa042b5ddaf8b041c6d633b.ctex"
+uid="uid://dd7tiu67bwlxe"
+path="res://.godot/imported/Memories Eating.png-1199ce7dfd6737b3fb0301a1e3ec75bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cutscenes/Memories Alley.png"
-dest_files=["res://.godot/imported/Memories Alley.png-28496e109aa042b5ddaf8b041c6d633b.ctex"]
+source_file="res://Assets/Cutscenes/Memories Eating.png"
+dest_files=["res://.godot/imported/Memories Eating.png-1199ce7dfd6737b3fb0301a1e3ec75bd.ctex"]
 
 [params]
 

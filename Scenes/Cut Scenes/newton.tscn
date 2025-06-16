@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://bh3rueruaobp3"]
 
-[ext_resource type="Script" uid="uid://3biwhoe0whbn" path="res://Scripts/Cut Scenes/newton.gd" id="1_b3bx1"]
+[ext_resource type="Script" path="res://Scripts/Cut Scenes/newton.gd" id="1_b3bx1"]
 [ext_resource type="Texture2D" uid="uid://fdewnvxmnfjv" path="res://Assets/Cutscenes/Pochita Newton.png" id="2_8x6hq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lrfbr"]
@@ -184,10 +184,10 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c4onh"]
 _data = {
-&"dark_fade_in": SubResource("Animation_h23ly"),
-&"dark_fade_out": SubResource("Animation_87neh"),
-&"light_fade_in": SubResource("Animation_lexsr"),
-&"light_fade_out": SubResource("Animation_klpme")
+"dark_fade_in": SubResource("Animation_h23ly"),
+"dark_fade_out": SubResource("Animation_87neh"),
+"light_fade_in": SubResource("Animation_lexsr"),
+"light_fade_out": SubResource("Animation_klpme")
 }
 
 [node name="Newton" type="Node2D"]
