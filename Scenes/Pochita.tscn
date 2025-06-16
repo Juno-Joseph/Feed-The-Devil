@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://b73j1n7xno5g3"]
 
 [ext_resource type="Texture2D" uid="uid://csjmpla6ui0pf" path="res://Assets/Pochita Idle.png" id="1_iu1pi"]
-[ext_resource type="Script" path="res://Scripts/Pochita.gd" id="1_kjq4e"]
+[ext_resource type="Script" uid="uid://b338bk1a7iodt" path="res://Scripts/Pochita.gd" id="1_kjq4e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rra1k"]
 atlas = ExtResource("1_iu1pi")

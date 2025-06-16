@@ -1,5 +1,6 @@
 [gd_scene load_steps=37 format=3 uid="uid://mx5ol01vvr10"]
 
+<<<<<<< HEAD
 [ext_resource type="Script" path="res://Scripts/Cut Scenes/memories.gd" id="1_ih0u5"]
 [ext_resource type="Texture2D" uid="uid://cxxf0ie5tmg2n" path="res://Assets/Cutscenes/Memories Alley.png" id="2_4p61c"]
 
@@ -206,6 +207,9 @@ animations = [{
 "name": &"alley",
 "speed": 11.0
 }]
+=======
+[ext_resource type="Script" uid="uid://co5kw714jqdok" path="res://Scripts/Cut Scenes/memories.gd" id="1_ih0u5"]
+>>>>>>> 41566fd7da633423ec930a9c091ffda374edaa34
 
 [sub_resource type="Animation" id="Animation_h23ly"]
 resource_name = "dark_fade_in"
@@ -317,10 +321,10 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c4onh"]
 _data = {
-"dark_fade_in": SubResource("Animation_h23ly"),
-"dark_fade_out": SubResource("Animation_87neh"),
-"light_fade_in": SubResource("Animation_lexsr"),
-"light_fade_out": SubResource("Animation_klpme")
+&"dark_fade_in": SubResource("Animation_h23ly"),
+&"dark_fade_out": SubResource("Animation_87neh"),
+&"light_fade_in": SubResource("Animation_lexsr"),
+&"light_fade_out": SubResource("Animation_klpme")
 }
 
 [node name="Memories" type="Node2D"]
