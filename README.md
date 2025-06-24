@@ -6,11 +6,11 @@ Description
   where everything was made by me completely. From the art to the
   sounds, I was able to implement different aspects of my creativity into this project.
 
-[//]: # ![Image]() put picture of pochita here
+<!-- ![Image]() put picture of pochita here -->
 
 Gameplay
 
-[//]: # put gameplay video here
+<!-- put gameplay video here -->
 
 - The objective of this game is to feed the devil his favorite foods. Feed him well and you'll
   please him. Feed him bad food and you'll feel his wrath! Get different endings depending on what
