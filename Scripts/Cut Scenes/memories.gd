@@ -8,6 +8,9 @@ func _ready():
 	anim.play("alley")
 	transition.play("light_fade_in")
 
-
 func _on_animated_sprite_2d_animation_finished():
 	anim.play("eating")
+
+
+func _on_button_pressed():
+	get_tree().change_scene_to_file("res://Scenes/game.tscn")

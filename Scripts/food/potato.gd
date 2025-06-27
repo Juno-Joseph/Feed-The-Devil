@@ -37,10 +37,12 @@ func _on_area_2d_area_entered(area):
 		print("collision")
 		transition.play("light_fade_out")
 		SPEED = 0
-		get_tree().change_scene_to_packed(memories)
+		queue_free()
 
 func _on_transition_animation_finished(anim_name):
 	if global.points == potato_pts:
 		pass
 	else:
 		pass
+
+

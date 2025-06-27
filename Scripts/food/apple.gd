@@ -37,6 +37,7 @@ func _on_area_2d_area_entered(area):
 		print("collision")
 		transition.play("light_fade_out")
 		SPEED = 0
+		#queue_free()
 
 func _on_transition_animation_finished(anim_name):
 	if global.points == apple_pts:

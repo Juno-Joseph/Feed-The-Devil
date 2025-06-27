@@ -417,8 +417,9 @@ metadata/_edit_use_anchors_ = true
 visible = false
 
 [connection signal="child_exiting_tree" from="." to="Hot Dog" method="_on_game_child_exiting_tree"]
+[connection signal="tree_exited" from="Bread And Jelly" to="." method="_on_bread_and_jelly_tree_exited"]
 [connection signal="tree_exited" from="Hot Dog" to="." method="_on_hot_dog_tree_exited"]
-[connection signal="tree_exiting" from="Hot Dog" to="." method="_on_hot_dog_tree_exiting"]
+[connection signal="tree_exited" from="Potato" to="." method="_on_potato_tree_exited"]
 [connection signal="animation_finished" from="Transition" to="." method="_on_transition_animation_finished"]
 [connection signal="animation_finished" from="Transition" to="Apple" method="_on_transition_animation_finished"]
 [connection signal="animation_finished" from="Transition" to="Avocado" method="_on_transition_animation_finished"]

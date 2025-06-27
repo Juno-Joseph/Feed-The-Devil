@@ -1,5 +1,6 @@
 extends Node2D
 
+@onready var hot_dog = $"Hot Dog"
 @onready var anim = $AnimatedSprite2D
 @onready var transition = $Transition
 
@@ -7,6 +8,7 @@ extends Node2D
 func _ready():
 	anim.play("Slashes")
 	transition.play("dark_fade_in")
+
 
 func _on_animated_sprite_2d_animation_finished():
 	anim.play("CSM")
