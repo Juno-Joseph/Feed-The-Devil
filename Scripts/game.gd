@@ -14,5 +14,11 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-
+#
+#
+#func _on_hot_dog_tree_exited():
+	#var node_to_save = self
+	#var scene = PackedScene.new()
+	#scene.pack(node_to_save)
+	#ResourceSaver.save(scene, "res://Scenes/saved_game.tscn")
 
