@@ -1,6 +1,6 @@
 [gd_scene load_steps=43 format=3 uid="uid://mtt7esac3fql"]
 
-[ext_resource type="Script" path="res://Scripts/Cut Scenes/memories.gd" id="1_7nsof"]
+[ext_resource type="Script" uid="uid://co5kw714jqdok" path="res://Scripts/Cut Scenes/memories.gd" id="1_7nsof"]
 [ext_resource type="Texture2D" uid="uid://cko3copxff74e" path="res://Assets/Cutscenes/Memories Alley.png" id="2_ta8e1"]
 [ext_resource type="Texture2D" uid="uid://dd7tiu67bwlxe" path="res://Assets/Cutscenes/Memories Eating.png" id="3_2ay4w"]
 
@@ -358,10 +358,10 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c4onh"]
 _data = {
-"dark_fade_in": SubResource("Animation_h23ly"),
-"dark_fade_out": SubResource("Animation_87neh"),
-"light_fade_in": SubResource("Animation_lexsr"),
-"light_fade_out": SubResource("Animation_klpme")
+&"dark_fade_in": SubResource("Animation_h23ly"),
+&"dark_fade_out": SubResource("Animation_87neh"),
+&"light_fade_in": SubResource("Animation_lexsr"),
+&"light_fade_out": SubResource("Animation_klpme")
 }
 
 [node name="Memories" type="Node2D"]
@@ -381,7 +381,7 @@ color = Color(0.348069, 0.545953, 0.472858, 1)
 
 [node name="Transition" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_c4onh")
+&"": SubResource("AnimationLibrary_c4onh")
 }
 
 [node name="ColorRect" type="ColorRect" parent="Transition"]

@@ -45,5 +45,3 @@ func _on_transition_animation_finished(anim_name):
 		pass
 	else:
 		pass
-
-

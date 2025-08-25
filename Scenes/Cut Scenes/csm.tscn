@@ -1,6 +1,6 @@
 [gd_scene load_steps=75 format=3 uid="uid://dpy2t66qnyblo"]
 
-[ext_resource type="Script" path="res://Scripts/Cut Scenes/csm.gd" id="1_027jr"]
+[ext_resource type="Script" uid="uid://bf4bqf17ywp0w" path="res://Scripts/Cut Scenes/csm.gd" id="1_027jr"]
 [ext_resource type="Texture2D" uid="uid://uetxosbntu56" path="res://Assets/Cutscenes/CSM.png" id="2_74q7w"]
 [ext_resource type="Texture2D" uid="uid://bk8s66fy374a4" path="res://Assets/Cutscenes/CSM Slashes.png" id="3_hv8ao"]
 
@@ -582,10 +582,10 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c4onh"]
 _data = {
-"dark_fade_in": SubResource("Animation_h23ly"),
-"dark_fade_out": SubResource("Animation_87neh"),
-"light_fade_in": SubResource("Animation_lexsr"),
-"light_fade_out": SubResource("Animation_klpme")
+&"dark_fade_in": SubResource("Animation_h23ly"),
+&"dark_fade_out": SubResource("Animation_87neh"),
+&"light_fade_in": SubResource("Animation_lexsr"),
+&"light_fade_out": SubResource("Animation_klpme")
 }
 
 [node name="Csm" type="Node2D"]
@@ -605,7 +605,7 @@ color = Color(0.62, 0.217, 0.217, 1)
 
 [node name="Transition" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_c4onh")
+&"": SubResource("AnimationLibrary_c4onh")
 }
 
 [node name="ColorRect" type="ColorRect" parent="Transition"]

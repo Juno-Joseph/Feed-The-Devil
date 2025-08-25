@@ -21,4 +21,3 @@ func _process(delta):
 	#var scene = PackedScene.new()
 	#scene.pack(node_to_save)
 	#ResourceSaver.save(scene, "res://Scenes/saved_game.tscn")
-

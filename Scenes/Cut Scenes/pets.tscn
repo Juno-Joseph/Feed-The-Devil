@@ -242,7 +242,7 @@ color = Color(0.322967, 0.453332, 0.267724, 1)
 
 [node name="Transition" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_c4onh")
+&"": SubResource("AnimationLibrary_c4onh")
 }
 
 [node name="ColorRect" type="ColorRect" parent="Transition"]
