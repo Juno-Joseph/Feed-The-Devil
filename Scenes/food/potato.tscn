@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cb5nl01q1rtwi"]
 
-[ext_resource type="Script" uid="uid://b0hmny0755yit" path="res://Scripts/food/potato.gd" id="1_cgjko"]
+[ext_resource type="Script" path="res://Scripts/food/potato.gd" id="1_cgjko"]
 [ext_resource type="Texture2D" uid="uid://dd2crtk1tshwr" path="res://Assets/food/Pochita Potato.png" id="1_satm0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c35yt"]
