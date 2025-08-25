@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://b2xmvn2eibw64"]
 
-[ext_resource type="Script" path="res://Scripts/Cut Scenes/pets.gd" id="1_cedd4"]
+[ext_resource type="Script" uid="uid://dab8odvid1vd4" path="res://Scripts/Cut Scenes/pets.gd" id="1_cedd4"]
 [ext_resource type="Texture2D" uid="uid://bxm7m5jki5iuc" path="res://Assets/Cutscenes/Denji Petting.png" id="1_nyq0a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_igmj3"]
@@ -219,10 +219,10 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c4onh"]
 _data = {
-"dark_fade_in": SubResource("Animation_h23ly"),
-"dark_fade_out": SubResource("Animation_87neh"),
-"light_fade_in": SubResource("Animation_lexsr"),
-"light_fade_out": SubResource("Animation_klpme")
+&"dark_fade_in": SubResource("Animation_h23ly"),
+&"dark_fade_out": SubResource("Animation_87neh"),
+&"light_fade_in": SubResource("Animation_lexsr"),
+&"light_fade_out": SubResource("Animation_klpme")
 }
 
 [node name="pets" type="Node2D"]
@@ -242,10 +242,11 @@ color = Color(0.322967, 0.453332, 0.267724, 1)
 
 [node name="Transition" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_c4onh")
+&"": SubResource("AnimationLibrary_c4onh")
 }
 
 [node name="ColorRect" type="ColorRect" parent="Transition"]
+visible = false
 z_index = 5
 anchors_preset = 15
 anchor_right = 1.0

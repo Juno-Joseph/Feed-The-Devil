@@ -1,6 +1,6 @@
 [gd_scene load_steps=24 format=3 uid="uid://b3hc0wk3mfliw"]
 
-[ext_resource type="Script" path="res://Scripts/Cut Scenes/death.gd" id="1_kooli"]
+[ext_resource type="Script" uid="uid://cbrx32xjcdek5" path="res://Scripts/Cut Scenes/death.gd" id="1_kooli"]
 [ext_resource type="Texture2D" uid="uid://hom881lh7vey" path="res://Assets/Cutscenes/dead pochita.png" id="2_v5jsf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ao65s"]
@@ -226,10 +226,10 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c4onh"]
 _data = {
-"dark_fade_in": SubResource("Animation_h23ly"),
-"dark_fade_out": SubResource("Animation_87neh"),
-"light_fade_in": SubResource("Animation_lexsr"),
-"light_fade_out": SubResource("Animation_klpme")
+&"dark_fade_in": SubResource("Animation_h23ly"),
+&"dark_fade_out": SubResource("Animation_87neh"),
+&"light_fade_in": SubResource("Animation_lexsr"),
+&"light_fade_out": SubResource("Animation_klpme")
 }
 
 [node name="Death" type="Node2D"]
@@ -249,10 +249,11 @@ color = Color(0.35, 0.3192, 0.273, 1)
 
 [node name="Transition" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_c4onh")
+&"": SubResource("AnimationLibrary_c4onh")
 }
 
 [node name="ColorRect" type="ColorRect" parent="Transition"]
+visible = false
 self_modulate = Color(0, 0, 0, 1)
 z_index = 5
 anchors_preset = 15

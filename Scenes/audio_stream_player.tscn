@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6ycj1x1i151e"]
+
+[ext_resource type="AudioStream" uid="uid://dj5o4rgajw5rn" path="res://Assets/Music & Sounds/Pochita Theme.mp3" id="1_px1li"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_px1li")
+autoplay = true
