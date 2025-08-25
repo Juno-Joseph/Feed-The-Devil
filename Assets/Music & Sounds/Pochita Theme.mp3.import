@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dj5o4rgajw5rn"
+path="res://.godot/imported/Pochita Theme.mp3-db9bb41e78d7a941e6612abf6c03de0b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music & Sounds/Pochita Theme.mp3"
+dest_files=["res://.godot/imported/Pochita Theme.mp3-db9bb41e78d7a941e6612abf6c03de0b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
