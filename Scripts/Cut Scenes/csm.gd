@@ -12,4 +12,7 @@ func _on_animated_sprite_2d_animation_finished():
 	anim.play("CSM")
 	
 func _on_button_pressed():
-	get_tree().change_scene_to_file("res://Scenes/saved_game.tscn")
+	get_tree().reload_current_scene()
+
+func _on_reset_pressed():
+	get_tree().change_scene_to_file("res://Scenes/game.tscn")

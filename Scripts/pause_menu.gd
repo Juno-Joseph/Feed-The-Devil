@@ -1,8 +1,14 @@
 extends Control
 
+@onready var settings_buttons = $Settings_Buttons
+@onready var options = $Options
+
+
 func _ready():
 	$AnimationPlayer.play("RESET")
 	hide()
+	settings_buttons.visible = true
+	options.visible = false
 
 func resume():
 	get_tree().paused = false
@@ -31,7 +37,8 @@ func _on_restart_pressed():
 
 
 func _on_options_pressed():
-	pass # Replace with function body.
+	settings_buttons.visible = false
+	options.visible = true
 
 
 func _on_exit_pressed():

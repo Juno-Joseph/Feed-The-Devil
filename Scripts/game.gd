@@ -11,9 +11,7 @@ var death = preload("res://Scenes/Cut Scenes/death.tscn")
 func _ready():
 	pass
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+
 #
 #
 #func _on_hot_dog_tree_exited():

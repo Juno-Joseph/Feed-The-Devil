@@ -262,3 +262,37 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 0
 metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+z_index = 6
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1041.0
+offset_top = 522.0
+offset_right = 1146.0
+offset_bottom = 563.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Replay"
+
+[node name="Reset" type="Button" parent="."]
+z_index = 6
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1041.0
+offset_top = 573.0
+offset_right = 1146.0
+offset_bottom = 614.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Reset
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Reset" to="." method="_on_reset_pressed"]
